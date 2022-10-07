@@ -5,7 +5,7 @@ import cafe.Order;
 
 public class Visitor extends Thread {
     final Order order = new Order();
-    final int sleep = 100;
+    final int SLEEP = 100;
     public Visitor(String name) {
         super( name);
     }
@@ -23,7 +23,7 @@ public class Visitor extends Thread {
                 }
                 System.out.println(Thread.currentThread().getName() + " приступил к приему пищи");
                 try {
-                    Thread.sleep(sleep);
+                    Thread.sleep(SLEEP);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
