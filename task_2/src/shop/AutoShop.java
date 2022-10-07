@@ -1,7 +1,5 @@
 package shop;
 
-import threads.HumanThread;
-
 import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.Stack;

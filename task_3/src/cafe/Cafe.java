@@ -10,6 +10,7 @@ public class Cafe {
     private Cooker cooker = new Cooker();
     private static Cafe instance;
     private int count;
+    final int sleep = 100;
 
     private Cafe() {
         listOrders = new ArrayDeque<>();
@@ -46,7 +47,7 @@ public class Cafe {
         synchronized (cooker) {
             System.out.println("Повар начинает готовить заказ");
             try {
-                sleep(100);
+                sleep(sleep);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
